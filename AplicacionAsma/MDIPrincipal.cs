@@ -23,7 +23,6 @@ namespace AplicacionAsma
         {
             Form childForm = new DatosPaciente();
             childForm.MdiParent = this;
-            childForm.Text = "Ventana " + childFormNumber++;
             childForm.Show();
         }
 
