@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="tlpUsuario.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -2933,10 +2936,18 @@
         iiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//Z
 </value>
   </data>
-  <data name="txtDescripcion.Text" xml:space="preserve">
-    <value>La Escala de Ansiedad y Depresión Hospitalaria (HADS) es una herramienta de tamizaje para la
-detección de trastornos afectivos en el ámbito hospitalario ambulatorio en pacientes con enfermedades crónicas</value>
+  <data name="label1.Text" xml:space="preserve">
+    <value>La Escala de Ansiedad y Depresión 
+Hospitalaria (HADS) es una 
+herramienta de tamizaje para la
+detección de trastornos afectivos en el
+ámbito hospitalario ambulatorio en 
+pacientes con enfermedades crónicas
+</value>
   </data>
+  <metadata name="erpIngreso.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>125, 17</value>
+  </metadata>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAAAAAAAEAIADQIQAAFgAAAIlQTkcNChoKAAAADUlIRFIAAAEAAAABAAgGAAAAXHKoZgAAAAlw

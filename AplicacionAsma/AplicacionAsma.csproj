@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cuestionario1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cuestionario1.Designer.cs">
+      <DependentUpon>Cuestionario1.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatosPaciente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -57,6 +63,12 @@
     </Compile>
     <Compile Include="Ingreso.Designer.cs">
       <DependentUpon>Ingreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Instrucciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Instrucciones.Designer.cs">
+      <DependentUpon>Instrucciones.cs</DependentUpon>
     </Compile>
     <Compile Include="MDIPrincipal.cs">
       <SubType>Form</SubType>
@@ -72,11 +84,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cuestionario1.resx">
+      <DependentUpon>Cuestionario1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DatosPaciente.resx">
       <DependentUpon>DatosPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Ingreso.resx">
       <DependentUpon>Ingreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instrucciones.resx">
+      <DependentUpon>Instrucciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDIPrincipal.resx">
       <DependentUpon>MDIPrincipal.cs</DependentUpon>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ingreso));
             this.lblBienvenidos = new System.Windows.Forms.Label();
             this.lblUsuario = new System.Windows.Forms.Label();
@@ -37,8 +38,11 @@
             this.btnIngresar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tlpUsuario = new System.Windows.Forms.ToolTip(this.components);
+            this.erpIngreso = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpIngreso)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBienvenidos
@@ -77,6 +81,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(214, 20);
             this.txtUsuario.TabIndex = 4;
+            this.tlpUsuario.SetToolTip(this.txtUsuario, "Ingrese su usuario");
             // 
             // txtContraseña
             // 
@@ -85,6 +90,7 @@
             this.txtContraseña.PasswordChar = '*';
             this.txtContraseña.Size = new System.Drawing.Size(214, 20);
             this.txtContraseña.TabIndex = 5;
+            this.tlpUsuario.SetToolTip(this.txtContraseña, "Ingrese su contraseña");
             // 
             // btnIngresar
             // 
@@ -96,7 +102,7 @@
             this.btnIngresar.TabIndex = 6;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = false;
-            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click_1);
             // 
             // btnCancelar
             // 
@@ -104,7 +110,7 @@
             this.btnCancelar.Font = new System.Drawing.Font("MS Reference Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.Location = new System.Drawing.Point(536, 329);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(161, 40);
+            this.btnCancelar.Size = new System.Drawing.Size(161, 45);
             this.btnCancelar.TabIndex = 7;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -120,24 +126,27 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // txtDescripcion
+            // label1
             // 
-            this.txtDescripcion.BackColor = System.Drawing.Color.NavajoWhite;
-            this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtDescripcion.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescripcion.Location = new System.Drawing.Point(35, 264);
-            this.txtDescripcion.Multiline = true;
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(369, 131);
-            this.txtDescripcion.TabIndex = 1;
-            this.txtDescripcion.Text = resources.GetString("txtDescripcion.Text");
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("MS Reference Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(35, 274);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(369, 120);
+            this.label1.TabIndex = 9;
+            this.label1.Text = resources.GetString("label1.Text");
+            // 
+            // erpIngreso
+            // 
+            this.erpIngreso.ContainerControl = this;
             // 
             // Ingreso
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.NavajoWhite;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnIngresar);
@@ -145,13 +154,13 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.lblContraseña);
             this.Controls.Add(this.lblUsuario);
-            this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.lblBienvenidos);
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Ingreso";
             this.Text = "Ingreso";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.erpIngreso)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,7 +176,9 @@
         private System.Windows.Forms.Button btnIngresar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox txtDescripcion;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ToolTip tlpUsuario;
+        private System.Windows.Forms.ErrorProvider erpIngreso;
     }
 }
 
